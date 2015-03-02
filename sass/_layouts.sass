@@ -1,0 +1,42 @@
+// default layout
+.l
+	+clr
+	&.l_grey
+		padding: 37px 30px 60px
+		margin-top: 36px
+		background: #f5f7f9
+		+border-radius(5px)
+		.l-col1
+			padding-top: 10px
+		+r(640)
+			padding-top: 27px
+			margin: 71px 0 0
+			.l-col2
+				margin-top: 27px
+		+r(560)
+			padding: 27px 18px 60px
+	.l-col1
+		float: left
+		padding: 16px 40px 0 0
+		width: 50%
+		.input-field
+			&:first-child
+				margin-top: 0
+	.l-col2
+		float: right
+		padding-left: 29px
+		width: 50%
+		+r(640)
+			margin-top: 60px
+	.l-col1,
+	.l-col2
+		+box
+	+r(640)
+		margin: 0 35px
+		.l-col1,
+		.l-col2
+			padding: 0
+			width: 100%
+	+r(560)
+		margin: 0 29px 0 22px
+
