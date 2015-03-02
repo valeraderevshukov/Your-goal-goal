@@ -142,15 +142,17 @@ a { text-decoration: none; }
 .criterion .checkbox { margin-top: 24px; }
 .criterion .checkbox:first-child { margin-top: 0; }
 .criterion .checkbox.is-active .checkbox__text { opacity: 1; font-size: 14px; }
-.criterion .checkbox.is-active .checkbox__text:before { border-color: #7eb932; background-color: #7eb932; }
 .criterion .checkbox.is-active .checkbox___block { display: block; }
 .criterion .checkbox__text { padding: 2px 0 0 40px; border: none; color: #212121; opacity: 0.6; font-weight: 600; font-size: 12px; }
 .criterion .checkbox__text:before, .criterion .checkbox__text:after, .criterion .checkbox__text input { left: 0; top: 0; margin: 0; }
-.criterion .checkbox__text:before { width: 21px; height: 21px; background-color: #dadde1; border-color: #dadde1; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; }
+.criterion .checkbox__text:before { width: 21px; height: 21px; background-color: #e1e4e7; border-color: #e1e4e7; -moz-border-radius: 6px; -webkit-border-radius: 6px; border-radius: 6px; }
 .criterion .checkbox__text:after { left: 7px; top: 7px; background: url('../img/icons-s3359cc9ece.png') 0 -34px no-repeat; width: 8px; height: 6px; }
 .criterion input:checked + .checkbox__text { border: none; }
+.criterion input:checked + .checkbox__text:before { border-color: #7eb932; background-color: #7eb932; }
+.criterion input:checked + .checkbox__text .checkbox___block:before { background: #7eb932; }
+.criterion input:disabled:checked + .checkbox__text:before { background-color: #e1e4e7; border-color: #e1e4e7; }
 .criterion .checkbox___block { position: relative; margin-top: 24px; font-size: 12px; line-height: 20px; display: none; }
-.criterion .checkbox___block:before { position: absolute; content: ""; top: 4px; left: -30px; bottom: 8px; width: 2px; background: #7eb932; }
+.criterion .checkbox___block:before { position: absolute; content: ""; top: 4px; left: -30px; bottom: 8px; width: 2px; background: #e1e4e6; }
 
 .publish { padding: 30px 60px; text-align: right; background: #f5f7f9; margin-top: 60px; -moz-border-radius: 0 0 5px 5px; -webkit-border-radius: 0; border-radius: 0 0 5px 5px; *zoom: 1; }
 .publish:after { content: " "; display: table; clear: both; }
