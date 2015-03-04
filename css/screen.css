@@ -211,6 +211,7 @@ a { text-decoration: none; }
   .l.l_grey .l-col2 { margin-top: 27px; } }
 @media only screen and (max-width: 560px) { .l.l_grey { padding: 27px 18px 60px; } }
 .l .l-col1 { float: left; padding: 16px 40px 0 0; width: 50%; }
+.l .l-col1 textarea.materialize-textarea.description { height: 78px; }
 .l .l-col1 textarea.materialize-textarea { padding: 0.7rem 0 0.7rem; min-height: 2rem; height: 2rem; }
 .l .l-col1 textarea.materialize-textarea, .l .l-col1 input { border: none; }
 .l .l-col1 textarea.materialize-textarea:focus:-ms-input-placeholder, .l .l-col1 input:focus:-ms-input-placeholder { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
