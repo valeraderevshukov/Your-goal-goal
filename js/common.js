@@ -1,26 +1,29 @@
 head.ready(function() {
 
-	// $(document).on("click", function(){
-	// 	$(".js-popup").hide();
-	// });
+	$(document).on("click", function() {
+		$('.js-checkbox').removeClass("is-open");
+	});
 
-	// function scrollFixedElements() {
-	//     var scroll_left = $(this).scrollLeft();
-	//     $(".fixed-element").css({
-	//         left: -scroll_left
-	//     });
-	// }
-	// scrollFixedElements();
-	// $(window).scroll(function(){
-	//     scrollFixedElements()
-	// });
+	$('.js-open-checkbox').on('click', function(event) {
+		if($(this).parent().hasClass('is-open')) {
+			$(this).parent().removeClass("is-open");
+		}else {
+			$('.js-checkbox').removeClass("is-open");
+			$(this).parent().addClass('is-open');
+		}
+		return false;
+	});
+	$(".checkbox___block").on("click", function(event){
+		event.stopPropagation();
+	});
+
 	$('.datepicker').pickadate({
 		selectMonths: true,
 		selectYears: 15
 	});
+
 	$('.tooltipped').tooltip({delay: 50});
 
-	// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
 	$('.modal-trigger').leanModal();
 
 	$('#modal1').openModal();
@@ -34,4 +37,14 @@ head.ready(function() {
 	      out_duration: 200
 	    }
 	);
+
+	$('.picker__day').click(function (){
+		$('.picker').removeClass('picker--opened');
+		$('.picker').removeClass('picker--focused');
+		$('.datepicker').removeClass('picker__input--active');
+		$('.datepicker').removeClass('picker__input--target');
+
+		$('#index-page').css('overflow','auto');
+	});
 });
+	
