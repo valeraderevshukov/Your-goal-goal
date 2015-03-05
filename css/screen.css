@@ -146,7 +146,7 @@ a { text-decoration: none; }
 .criterion .checkbox .checkbox__th:before { position: absolute; content: ""; top: -50px; left: -25px; right: -25px; bottom: 0; }
 .criterion .checkbox:first-child { margin-top: 0; }
 .criterion .checkbox.is-active { padding-bottom: 40px; margin-bottom: 40px; }
-.criterion .checkbox.is-active:before { position: absolute; content: ""; left: 70px; right: 70px; bottom: 0; height: 1px; background-color: #e1e4e7; }
+.criterion .checkbox.is-active:before { position: absolute; content: ""; left: 70px; right: 70px; bottom: 0; height: 1px; background-color: #a3a5aa; }
 .criterion .checkbox.is-active .checkbox__text { opacity: 1; font-size: 14px; }
 .criterion .checkbox.is-active .checkbox__leb:before { border-color: #7eb932; background-color: #7eb932; }
 .criterion .checkbox.is-active .checkbox___block { display: block; }
