@@ -515,25 +515,31 @@ a
 			content: ''
 			top: 47px
 			left: 10px
-			bottom: 32px
+			bottom: 40px
 			width: 2px
 			z-index: 20
 			cursor: pointer
 			background: #e1e4e6
-		&:first-child
-			margin-top: 0
-		&.is-active
-			padding-bottom: 24px
 			&:before
 				position: absolute
 				content: ''
-				left: 20px
-				right: 20px
+				top: -50px
+				left: -25px
+				right: -25px
+				bottom: 0
+		&:first-child
+			margin-top: 0
+		&.is-active
+			padding-bottom: 40px
+			margin-bottom: 40px
+			&:before
+				position: absolute
+				content: ''
+				left: 70px
+				right: 70px
 				bottom: 0
 				height: 1px
 				background-color: #e1e4e7
-			.checkbox__th
-				background: #7eb932
 			.checkbox__text
 				opacity: 1
 				font-size: 14px
@@ -541,17 +547,11 @@ a
 				&:before
 					border-color: #7eb932
 					background-color: #7eb932
-		&.is-active,
-		&.is-open
+		&.is-active
 			.checkbox___block
 				display: block
 		&.is-open
-			.checkbox__th
-				bottom: 8px
 			.checkbox__text
-				.checkbox___block
-					font-weight: 400
-					cursor: text
 				span
 					font-weight: 700
 	.checkbox__text
@@ -601,6 +601,8 @@ a
 			+ .checkbox__leb
 				&:after
 					display: block
+	input:checked + .checkbox__leb + .checkbox__th
+		background: #7eb932
 	.checkbox___block
 		margin-top: 24px
 		font-size: 12px
